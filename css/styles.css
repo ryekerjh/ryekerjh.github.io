@@ -1,0 +1,15 @@
+
+
+/*==================================MAIN BODY===========================*/
+
+.wrapper {
+	background-image: url(../img/);
+	height:500px;
+	background-color: blue; 
+}
+
+.inner {
+	background-color: gray;
+	height:350px;
+	margin-top: 50px;
+}
