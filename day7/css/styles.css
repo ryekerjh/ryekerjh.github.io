@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Raleway:400,300,700);
+
+/*this was copied from the inspect element of the site and changed to transparent*/
+.navbar-default {
+   background-color: transparent; 
+   border-color: transparent;
+}
+
+.nav li a:hover {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FCFCFC;
+  text-shadow: 1px 1px 2px #0A0A0A;
+  
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #F8512F;
+  background-color: rgba(17, 17, 17, .2);
+  }
+
+nav.navbar /*when you do not space between the two calls, you are saying that the navbar is a class within the nav tag, not a parent/child relationship*/ {
+  position: absolute;
+  top: 100;
+  right: 0;
+  left: 0;
+  z-index: 20;  
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #FFF;
+  background-color: rgba(17, 17, 17, .5);
+}
+
+
+
+
+/*==================Carousel=================*/
+  .carousel {
+  	height:600px;
+  	margin-bottom: 60px;
+  }	
+  
+  .carousel-caption {
+  	z-index: 10;
+    bottom: 165px;
+  	
+  }
+
+  .main_img1 {
+    background-image: url(../img/wood-2_720.jpg);
+    width:100%;
+    height:600px; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main_img2 {
+    background-image: url(../img/farm-2_720.jpg);
+    width:100%;
+    height:600px; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main_img3 {
+    background-image: url(../img/restaurant-2_720.jpg);
+    width:100%;
+    height:600px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main_logo {
+    max-height: 300px;
+    position: cover;
+  }
+
+  .btn-primary{
+    color: #FFF;
+    background-color: #F8512F;
+    border-color: transparent;
+  }
+
+  .btn-primary:hover{
+    background-color: #D34326;
+    border-color: transparent;
+  }
+
+  .carousel-caption p {
+    color: #F7F7F7;
+    font-size: 16px;
+  }
+
+
+
+
+/*====================our story-===================*/
+#our_story, #menu, #review, #contact {
+  min-height: 600px;
+}
+
+#our_story h1{
+  font-family: 'Lobster', cursive;
+  color: #F8512F;
+  font-size: 90px;
+  text-shadow: 1px 1px 5px #0A0A0A;
+}
+
+#our_story h3 {
+  font-family: 'Raleway', Sans-Serif;
+  font-weight: 700;
+  font-size: 29zpx;
+  margin-top: -13px;
+}
+
+#our_story p {
+  font-family: 'Raleway', Sans-Serif;
+  font-weight: 300;/*this number corresponds to the weights that you linked in the top from google fonts*/
+}
+
+.story-year {
+  font-family: 'Lobster', cursive;
+  font-size: 200px;
+  z-index: -1;
+  position: absolute;
+  color: rgba(149, 147, 147, .2);
+  left: 100px;
+  top:35px;
+}
+
+/*=================================review=====================*/
+#review {
+  background-image: url(../img/food_review_720.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+#review h1 {
+  font-family: 'Lobster', cursive;
+  margin-top: 150px;
+  font-size: 6em;
+  color: #F8512F;
+}
+
+.rever{
+  background-color: rgba(17, 17, 17, .02);
+  border: 1px solid rgba(17, 17, 17, .02);
+  width:200px;
+  height:300px;
+}
