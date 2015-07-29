@@ -1,15 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:600);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 
-
-/*==================================MAIN BODY===========================*/
-
-.wrapper {
-	background-image: url(../img/);
-	height:500px;
-	background-color: blue; 
+/*=================================UNIVERSAL=================================*/
+body {
+	background: fixed;
+	background-image: url("../img/background-cover.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.inner {
-	background-color: gray;
-	height:350px;
+.container-fluid {
+	overflow: hidden;
+}
+
+/*================================MAIN BODY==========================*/
+
+.pitch {
+	background-color: rgba(255, 255, 255, .5);
+	color: #000;
+	height:100%;
+	width: 100%;
 	margin-top: 50px;
+}
+
+.mid-blocks {
+	margin-top:20%;
+	margin-bottom:15%;
+}
+
+.mid-blocks .col-md-3 {
+	border-radius: 5%;/*
+	margin-left: 80px;*/
+}
+
+.mid-blocks h2 {
+	padding-top: 85px;
+	margin-bottom: 100px;
+	font-family: 'Titillium Web', sans-serif;
+	color:#fff;
+	font-size: 35px;
+}
+
+.mid-blocks h2:hover {
+	font-size: 2.2em;
+}
+
+.resume {
+	background-image: url("../img/resume.jpg");
+	background-repeat: no-repeat;
+	background-position: center;	
+	background-size: cover;
+}
+
+.GIT {
+	background-image: url("../img/code-writing.jpg");
+	background-repeat: no-repeat;
+	background-position: center;	
+	background-size: cover;
+}
+
+.copywrite {
+	background-image: url("../img/copywrite.jpg");
+	background-repeat: no-repeat;
+	background-position: center;	
+	background-size: cover;
+
+}
+
+/*==============================CONTACT==============================*/
+
+p a {
+	text-decoration: none;
+	text-transform: none;
+	color:#000;
+}
+
+p a:hover {
+	text-decoration: none;
+	color:#fff;
+
+}
+
+.contact {
+	margin-top: 10%;
+	margin-bottom:20%;
+	font-family: 'Permanent Marker', cursive;
+	color:#fff;
+	font-size: 1.2em;
+	background-color: rgba(69, 69, 69, .75);
+	position: center;
+	width: 1000px;
+}
+
+address {
+	color: #000;
+}
+
+/*=============================FOOTER=============================*/
+
+footer {
+	height:15%;
+	background-color: rgba(25, 25, 25, .7);
+	color: #fff;
+}
+
+i {
+	padding-right: 40px;
+	color:#fff;
+	margin-top: 10px;
+}
+
+i:hover {
+	font-size: 2.2em;
+}
+
+footer p {
+	margin-top: 18px;
+}
+/*===============================MEDIA QUERIES======================*/
+
+@media (min-width: 768px) {
+	.mid-blocks {
+		margin-right: 50px;
+	}
+	.contact {
+		margin-left: 60px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact {
+		margin-right: none;
+	}
+	.social{
+		text-align: center;
+	}
+	.social i {
+		margin: 0;
+		font-size:45px;
+	}	
+	footer p {
+		text-align: center;
+	}
 }
