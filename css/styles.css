@@ -46,9 +46,8 @@ body {
 	margin-bottom:15%;
 }
 
-.mid-blocks .col-md-3 {
-	border-radius: 5%;/*
-	margin-left: 80px;*/
+.mid-blocks {
+	border-radius: 5%;
 }
 
 .mid-blocks h2 {
@@ -117,7 +116,7 @@ address {
 /*=============================FOOTER=============================*/
 
 footer {
-	height:15%;
+	height:30%;
 	background-color: rgba(25, 25, 25, .7);
 	color: #fff;
 }
@@ -148,7 +147,7 @@ footer p {
 
 @media (max-width: 768px) {
 	.contact {
-		width: 100%;
+		width: 320px;
 	}
 	.pitch {
 		width:100%;
