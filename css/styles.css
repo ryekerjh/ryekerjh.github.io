@@ -41,12 +41,21 @@ body {
 	font-family: 'Audiowide', cursive;
 }
 
+.pitch p {
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+.pitch strong {
+	color: #381212;
+}
+
 .mid-blocks {
 	margin-top:20%;
 	margin-bottom:15%;
 }
 
-.mid-blocks {
+#mid-blocks .col-sm-3{
 	border-radius: 5%;
 }
 
@@ -141,10 +150,11 @@ footer p {
 		margin-right: 90px;
 	}
 	.contact {
-		margin-left: 60px;
-		width:1000px;
+		width:100%;
 	}
 }
+
+
 
 @media (max-width: 768px) {
 	.pitch {
