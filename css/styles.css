@@ -115,7 +115,6 @@ p a:hover {
 	font-size: 1.2em;
 	background-color: rgba(69, 69, 69, .75);
 	position: center;
-	width: 100%;
 }
 
 address {
@@ -149,12 +148,7 @@ footer p {
 	.mid-blocks {
 		margin-right: 90px;
 	}
-	.contact {
-		width:100%;
-	}
 }
-
-
 
 @media (max-width: 768px) {
 	.pitch {
