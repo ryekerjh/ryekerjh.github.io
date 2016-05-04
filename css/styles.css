@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:600);
 @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Cuprum:400,700italic);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
 
 /*=================================UNIVERSAL=================================*/
 body {
@@ -14,14 +15,43 @@ body {
 	overflow: hidden;
 }
 
+.text-justify {
+	text-align: justify;
+}
+
+.block {
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
 /*================================MAIN BODY==========================*/
+
+.call {
+	font-family: 'Cuprum', sans-serif;
+}
+.call h1 {
+	margin-top: 200px;
+	color: #169999;
+	font-size: 4em;
+}
+
+.call h2 {
+	margin-top: 130px;
+	color: #CFCFCF;
+}
+
+.pitch p {
+	line-height: 2em;
+	font-size: 1.5em;
+}
 
 .pitch {
 	background-color: rgba(255, 255, 255, .5);
 	color: #000;
-	height:100%;
-	width: 100%;
 	margin-top: 50px;
+	font-family: 'Audiowide', cursive;
 }
 
 .mid-blocks {
@@ -30,8 +60,7 @@ body {
 }
 
 .mid-blocks .col-md-3 {
-	border-radius: 5%;/*
-	margin-left: 80px;*/
+	border-radius: 5%;
 }
 
 .mid-blocks h2 {
@@ -63,11 +92,31 @@ body {
 .copywrite {
 	background-image: url("../img/copywrite.jpg");
 	background-repeat: no-repeat;
-	background-position: center;	
+	background-position: center;
 	background-size: cover;
-
 }
 
+.iframe {
+	height:250px;
+	width:100%;
+	margin:50px auto;
+}
+
+.visit {
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	font-family:Cuprum;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 10px;
+	padding:5px 0;
+}
+
+.visit:hover {
+	text-decoration: none;
+	color: #000;
+	background-color: rgba(256, 256, 256, .5);
+}
 /*==============================CONTACT==============================*/
 
 p a {
@@ -89,12 +138,28 @@ p a:hover {
 	color:#fff;
 	font-size: 1.2em;
 	background-color: rgba(69, 69, 69, .75);
-	position: center;
-	width: 1000px;
 }
 
 address {
 	color: #000;
+}
+
+.phone a{
+	color: #000;
+	text-decoration: none;
+}
+
+.phone a:hover {
+	color: #fff;
+}
+
+.parllax-bkgd {
+	height:850px;
+	padding:10% 0;
+	background-attachment: fixed;
+	background-image: url('../img/code.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /*=============================FOOTER=============================*/
@@ -121,9 +186,7 @@ footer p {
 /*===============================MEDIA QUERIES======================*/
 
 @media (min-width: 768px) {
-	.mid-blocks {
-		margin-right: 50px;
-	}
+
 	.contact {
 		margin-left: 60px;
 	}
