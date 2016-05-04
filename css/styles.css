@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Cuprum:400,700italic);
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
+=======
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:600);
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Cuprum:700|Audiowide);
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 
 /*=================================UNIVERSAL=================================*/
 body {
@@ -15,6 +21,7 @@ body {
 	overflow: hidden;
 }
 
+<<<<<<< HEAD
 .text-justify {
 	text-align: justify;
 }
@@ -31,6 +38,10 @@ body {
 .call {
 	font-family: 'Cuprum', sans-serif;
 }
+=======
+/*================================MAIN BODY==========================*/
+
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 .call h1 {
 	margin-top: 200px;
 	color: #169999;
@@ -39,7 +50,35 @@ body {
 
 .call h2 {
 	margin-top: 130px;
+<<<<<<< HEAD
 	color: #CFCFCF;
+}
+
+.pitch p {
+	line-height: 2em;
+	font-size: 1.5em;
+=======
+	color: #CFCFCF 
+}
+
+.call {
+	font-family: 'Cuprum', sans-serif;
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
+}
+
+.pitch {
+	background-color: rgba(255, 255, 255, .5);
+	color: #000;
+<<<<<<< HEAD
+	margin-top: 50px;
+	font-family: 'Audiowide', cursive;
+}
+
+=======
+	height:100%;
+	width: 50%;
+	margin-top: 300px;
+	font-family: 'Audiowide', cursive;
 }
 
 .pitch p {
@@ -47,19 +86,21 @@ body {
 	font-size: 1.5em;
 }
 
-.pitch {
-	background-color: rgba(255, 255, 255, .5);
-	color: #000;
-	margin-top: 50px;
-	font-family: 'Audiowide', cursive;
+.pitch strong {
+	color: #381212;
 }
 
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 .mid-blocks {
 	margin-top:20%;
 	margin-bottom:15%;
 }
 
+<<<<<<< HEAD
 .mid-blocks .col-md-3 {
+=======
+#mid-blocks .col-sm-3{
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 	border-radius: 5%;
 }
 
@@ -92,6 +133,7 @@ body {
 .copywrite {
 	background-image: url("../img/copywrite.jpg");
 	background-repeat: no-repeat;
+<<<<<<< HEAD
 	background-position: center;
 	background-size: cover;
 }
@@ -117,6 +159,13 @@ body {
 	color: #000;
 	background-color: rgba(256, 256, 256, .5);
 }
+=======
+	background-position: center;	
+	background-size: cover;
+
+}
+
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 /*==============================CONTACT==============================*/
 
 p a {
@@ -138,12 +187,17 @@ p a:hover {
 	color:#fff;
 	font-size: 1.2em;
 	background-color: rgba(69, 69, 69, .75);
+<<<<<<< HEAD
+=======
+	position: center;
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 }
 
 address {
 	color: #000;
 }
 
+<<<<<<< HEAD
 .phone a{
 	color: #000;
 	text-decoration: none;
@@ -166,6 +220,12 @@ address {
 
 footer {
 	height:15%;
+=======
+/*=============================FOOTER=============================*/
+
+footer {
+	height:30%;
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 	background-color: rgba(25, 25, 25, .7);
 	color: #fff;
 }
@@ -186,15 +246,25 @@ footer p {
 /*===============================MEDIA QUERIES======================*/
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
 
 	.contact {
 		margin-left: 60px;
+=======
+	.mid-blocks {
+		margin-right: 90px;
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 	}
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
 	.contact {
 		margin-right: none;
+=======
+	.pitch {
+		width:100%;
+>>>>>>> 56b3dfada120b5ec73e525000e9c9d10464e68d3
 	}
 	.social{
 		text-align: center;
