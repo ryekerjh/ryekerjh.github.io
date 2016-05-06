@@ -31,6 +31,10 @@ body {
 a:visited, a:hover, a:visited, a:focus {
 	text-decoration: none;
 }
+
+.fine-print p {
+	font-size: 10px
+}
 /*================================MAIN BODY==========================*/
 
 .call {
@@ -242,20 +246,23 @@ footer p {
 @media (max-width: 768px) {
 	.contact {
 		margin-right: none;
-
 	}
+
 	.social{
 		text-align: center;
 	}
+
 	.social i {
 		margin: 0;
 		font-size:45px;
 	}
+
 	footer p {
 		text-align: center;
 	}
 
-	.GIT {
-		margin: 0
-	}
+.GIT {
+	margin: 0;
+}
+
 }
