@@ -121,6 +121,10 @@ body {
 	color: #000;
 	background-color: rgba(256, 256, 256, .5);
 }
+
+.mid-frame {
+	margin: 0 20px;
+}
 /*==============================CONTACT==============================*/
 
 p a {
