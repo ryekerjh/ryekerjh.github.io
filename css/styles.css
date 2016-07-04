@@ -173,6 +173,10 @@ a:visited, a:hover, a:visited, a:focus {
 	 border-radius: 10px;
 	 font-family: Cuprum, sans-serif;
  }
+
+ .col-md-6 .scheduler {
+	 height: 315px;
+ }
 /*==============================CONTACT==============================*/
 
 p a {
