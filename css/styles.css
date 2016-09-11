@@ -117,6 +117,11 @@ a:visited, a:hover, a:visited, a:focus {
 	margin: 0 20px;
 }
 
+.schedule {
+	max-height: 315px;
+	width: 100%;
+}
+
 .box {
     position:relative;
 }
@@ -173,9 +178,6 @@ a:visited, a:hover, a:visited, a:focus {
 	 font-family: Cuprum, sans-serif;
  }
 
- .scheduler {
-	 max-height: 315px !important;
- }
 /*==============================CONTACT==============================*/
 
 p a {
@@ -249,6 +251,11 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+	body {
+		background: #eee;
+	}
+
 	.contact {
 		margin-right: none;
 	}
