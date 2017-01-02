@@ -13,6 +13,13 @@ body {
 	background-color: #169999;
 }
 
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 .container-fluid {
 	overflow: hidden;
 }
@@ -35,6 +42,14 @@ a:visited, a:hover, a:visited, a:focus {
 
 .fine-print p {
 	font-size: 10px
+}
+
+.white {
+	color: #fff;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 /*================================MAIN BODY==========================*/
 
