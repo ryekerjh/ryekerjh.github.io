@@ -1,0 +1,173 @@
+$primary-color: #181818;;
+$accent-color: #4B4B4C;
+$highlight-color: #75FFE7;
+$primary-text: #47DB4A;
+$secondary-text: #e40007;
+body {
+    color: #fff;
+    .flex-container {
+        display: flex;
+        align-items: flex-start;
+        >aside {
+            width: 5vw;
+            height: 100vh;
+            background: $primary-color;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            animation: sidebar-in 1.5s ease-in;
+            .nav-links, .social-icons {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                a {
+                    &.sidebar-link {
+                        visibility: hidden;
+                    }
+                    margin-top: 24%;
+                    svg {
+                        fill: $accent-color;
+                    }
+                    i {
+                        color: $accent-color;
+                    }
+                    &:hover {
+                        svg {
+                            fill: $highlight-color;
+                            transition: all 0.2s ease-in-out;
+                        }
+                        i {
+                            color: $highlight-color;
+                            transition: all 0.2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+        >main {
+            width: 95vw;
+            height: 100vh;
+            background: #fff;
+            .hero {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                animation: fade-in 2s ease-in;
+                height: 80vh;
+                .bg-image {
+                    background-image: url('../img/portfolio.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    -webkit-filter: grayscale(100%) blur(1.5px);
+                    filter: grayscale(100%) blur(1.5px);
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    right: 0px;
+                    z-index: 0;
+                }
+                h1 {
+                    font-size: 4em;
+                    position: relative;
+                    z-index: 1;
+                    margin-top: 0px;
+                    color: $highlight-color;
+                }
+                h3 {
+                    position: relative;
+                    z-index: 1;
+                    animation: typing 5.5s 2s steps(100, end);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 0;
+                }
+                .primary-btn {
+                    position: absolute;
+                    background-color: $secondary-text;
+                    color: #fff;
+                    font-weight: bolder;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 16px 56px;
+                    font-size: 20px;
+                    bottom: 8px;
+                    &:hover {
+                        animation: jiggle 0.2s ease-in-out infinite;
+                        transform: translate3d(0, 0, 0);
+                        perspective: 1000px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ANIMATIONS
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes sidebar-in {
+    from {
+        opacity: 0;
+        height: 0vh;
+    }
+    to {
+        opacity: 1;
+        height: 100vh;
+    }
+}
+
+@keyframes drop-in {
+    from {
+        transform: translateY(-100%);
+        opacity: .5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-left {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+        // width: 0vw;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        // width: 90vw;
+    }
+}
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+  }
+
+  @keyframes typing {
+    from { 
+        width: 0;
+    }
+    to { 
+        width: 100%;
+    }
+  }
