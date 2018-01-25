@@ -16,7 +16,7 @@ body {
             align-items: center;
             display: flex;
             flex-direction: column;
-            animation: sidebar-in 1.5s ease-in;
+            z-index: 2;
             .nav-links, .social-icons {
                 position: relative;
                 display: flex;
@@ -66,10 +66,11 @@ body {
                     filter: grayscale(100%) blur(1.5px);
                     position: absolute;
                     top: 0px;
-                    left: 0px;
+                    left: -15px;
                     bottom: 0px;
-                    right: 0px;
+                    right: -15px;
                     z-index: 0;
+                    overflow: hidden;
                 }
                 h1 {
                     font-size: 4em;
@@ -95,7 +96,7 @@ body {
                     border-radius: 5px;
                     padding: 16px 56px;
                     font-size: 20px;
-                    bottom: 8px;
+                    bottom: 16px;
                     &:hover {
                         animation: jiggle 0.2s ease-in-out infinite;
                         transform: translate3d(0, 0, 0);
@@ -118,17 +119,6 @@ body {
     }
 }
 
-@keyframes sidebar-in {
-    from {
-        opacity: 0;
-        height: 0vh;
-    }
-    to {
-        opacity: 1;
-        height: 100vh;
-    }
-}
-
 @keyframes drop-in {
     from {
         transform: translateY(-100%);
@@ -145,12 +135,10 @@ body {
     from {
         opacity: 0;
         transform: translateX(100%);
-        // width: 0vw;
     }
     to {
         opacity: 1;
         transform: translateX(0);
-        // width: 90vw;
     }
 }
 
