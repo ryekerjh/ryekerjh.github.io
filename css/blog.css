@@ -30,6 +30,19 @@ header {
     color: #fff;
 }
 
+header.git-header {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/code.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
 ul>li h3{
     margin: 24px 0px;
     font-size: 32px;
@@ -66,6 +79,10 @@ hr {
 }
 
 footer {
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0; */
     height: 200px;
     display: flex;
     justify-content: center;
@@ -84,6 +101,16 @@ footer {
 
 img {
     margin: 0 auto 0 100px;
+}
+
+pre {
+    background-color: #333;
+    width: 75%;
+    margin: 0 auto;
+}
+
+pre>code {
+    color: #fff;
 }
 /* .white-text {
     color: #fff !important;
@@ -127,4 +154,8 @@ img {
         color: #333;
         text-decoration: none;
     }
+
+    pre {
+        width: 100%;
+    }   
 }
