@@ -1,43 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="ryeker, developer, herndon, ryeker j herndon, whos ryeker, coding ryeker, build my website, html5, css3, wordpress business, fresno, clovis, central valley"/>
-  	<meta name="description" content="Do you need a custom website, web application, or content management system for you or your business? Let's build it!"/>
-  	<title>Mr. Herndon's Portfolio</title>
-  	<link rel="stylesheet" href="../css/bootstrap.min.css">
-  	<link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <!-- <link rel="stylesheet" href="../css/v2.css"> -->
-    <link rel="stylesheet" href="../css/blog.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="" />
+  <meta name="description" content="Do you need a custom website, web application, or content management system for you or your business? Let's build it!"
+  />
+  <title>Mr. Herndon's Portfolio</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="../css/blog.css">
 </head>
-  <body class="white-text">
+
+<body class="white-text">
+  <header class="git-header">
     <h1 class="text-center">Git Work Flow</h1>
-        <h4 class="text-center">Everything you never knew you had to know about Version Control</h4>
-        <div class="container">
-          <h3 class="section-title">What even <em>is</em> Git?</h3>
-          <p>I'm glad you asked! Git is a program that you download for your computer to use. It's one and only job is to keep track of folders and files that you tell it to track. Once you learn how to use it properly, Git will ensure that you never lose code to hardware failures, accidental deletion, or any other unfortunate mishaps. After all, Git happens!</p>
+    <h4 class="text-center">Everything you never knew you had to know about Version Control</h4>
+  </header>
+  <div class="full-screen">
+    <div class="container">
+      <h3 class="section-title">What even
+        <em>is</em> Git?</h3>
+      <p>I'm glad you asked! Git is a program that you download for your computer to use. It's one and only job is to keep track
+        of folders and files that you tell it to track. Once you learn how to use it properly, Git will ensure that you never
+        lose code to hardware failures, accidental deletion, or any other unfortunate mishaps. After all, Git happens!</p>
+    </div>
+    <div class="container">
+      <h3 class="section-title">Well then what's Github?</h3>
+      <p>Another excellent question! Github (or more correctly:
+        <a href="https://www.github.com">github.com</a>) is a website that offers free services to software developers. Using Git (the program on your computer)
+        you can access free cloud-based storage for your code, get free web hosting, and keep infinite versions of your code,
+        safely stored on someone else's dime. Pretty Sweet!</p>
+    </div>
+    <div class="container">
+      <h3 class="section-title">What you need to know for JS1</h3>
+      <p>In the Javascript for Beginners course, we emphasize using Git and Github because as a developer, you'll be using
+        <em>some</em> form of version control, guaranteed. Below I have outlined all of the things you'll need to know about
+        git and github to begin day 1 of Intro to Javascript. Read each of the articles below and our summary of how you'll
+        use them.</p>
+      <ul>
+        <li>
+          <a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is">Git branches</a>
+          <p>Branches are a
+            <em>huge</em> asset to us as Front End Developers. Essentially, a branch is a copy of your code that you can edit
+            without changing the original version of the code. In our class, we will have 1 repository that we use for the
+            duration of the class. Each day at the beginning of class, we will create a new branch for that day's lessons.
+            That way, you can maintain a "clean" copy of your code base (the starting point with no code written) and create
+            a new branch for the different lessons (where you can write subject-specific notes.) The commands we will issue
+            in our terminal in class each day to create our new branch are:</p>
+          <ol>
+            <li>
+              <pre><code>
+  cd path/to/your/class/folder
+                    </code></pre>
+            </li>
+            <li>
+              <pre><code>
+  git checkout -b day-of-class
+                    </code></pre>
+            </li>
+            <li>
+              <p>It should return a message similar to this</p>
+              <img src="../img/checkout-result.png" alt="Checkout Result" class="img-responsive">
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="https://help.github.com/articles/about-pull-requests/">Pull Requests</a>
+          <p>Pull requests are how we re-unify (or merge) our branches back together. So once you're done with your take home
+            practice excersizes, you can merge the branch into your gh-pages branch so your instructor can test the functionality
+            of the code in real time. Read up on gh-pages branches below if you don't know what they are or what they do.</p>
+        </li>
+        <li>
+          <a href="https://pages.github.com/">gh-pages</a> branches
+          <p>Have you ever built a website and wanted to show it off but didn't want to pay for web hosting? Lucky for you,
+            github.com offers
+            <em>free</em> web hosting! You can't pick the name of your website, but if you just want to show off your skills
+            or show a client your progress on their website without paying a hosting company, this is your best bet. As far
+            as how we're going to use the gh-pages branch, it will be for testing your take home code. Each night after class,
+            you will create a new branch for your take home excersize, create the program for that class, and test it to
+            make sure it works. Once you're satisfied with it, you will create a Pull Request on github.com with your take
+            home branch as the
+            <b>compare</b> and your gh-pages branch as the
+            <b>base</b>. That way, your instructor can test your work as well as look over the code itself.</p>
+        </li>
+        <li>
+          <a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts">Merge conflicts</a>
+          <p>While we never
+            <em>want</em> merge conflicts to happen, they sometimes do. Because of this, you should read up on what they are
+            and how to resolve them. </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- MOBILE BEGINS -->
+  <div class="mobile">
+    <div class="panel-group mobile" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h4 class="panel-title">
+              Git Branches
+            </h4>
+          </a>
         </div>
-        <div class="container">
-          <h3 class="section-title">Well then what's Github?</h3>
-          <p>Another excellent question! Github (or more correctly: <a href="https://www.github.com">github.com</a>) is a website that offers free services to software developers. Using Git (the program on your computer) you can access free cloud-based storage for your code, get free web hosting, and keep infinite versions of your code, safely stored on someone else's dime. Pretty Sweet!</p>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <p>
+              <a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is">Git branches</a> are a
+              <em>huge</em> asset to us as Front End Developers. Essentially, a branch is a copy of your code that you can edit
+              without changing the original version of the code. In our class, we will have 1 repository that we use for
+              the duration of the class. Each day at the beginning of class, we will create a new branch for that day's lessons.
+              That way, you can maintain a "clean" copy of your code base (the starting point with no code written) and create
+              a new branch for the different lessons (where you can write subject-specific notes.) The commands we will issue
+              in our terminal in class each day to create our new branch are:</p>
+            <ol>
+              <li>
+                <pre><code>
+      cd path/to/your/class/folder
+                        </code></pre>
+              </li>
+              <li>
+                <pre><code>
+      git checkout -b day-of-class
+                        </code></pre>
+              </li>
+              <li>
+                <p>It should return a message similar to this</p>
+                <img src="../img/checkout-result.png" alt="Checkout Result" class="img-responsive">
+              </li>
+            </ol>
+          </div>
         </div>
-        <div class="container">
-          <h3 class="section-title">What you need to know for JS1</h3>
-          <p>In the Javascript for Beginners course, we emphasize using Git and Github because as a developer, you'll be using <em>some</em> form of version control, guaranteed. Below is a step-by-step setup guide for getting ready for day 1 of class, but here are the concepts you need to be familiar with, along with links to learn more, <em>before</em> day 1 of class:</p>
-          <ul>
-            <li><a href="">Git branches</a></li>
-            <li><a href="">Pull Requests</a></li>
-            <li><a href="">gh-pages</a> branches</li>
-            <li><a href="">Merge conflicts</a></li>
-          </ul>
+      </div>
+    </div>
+    <div class="panel-group mobile" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <h4 class="panel-title">
+              Pull Requests
+            </h4>
+          </a>
         </div>
+        <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <a href="https://help.github.com/articles/about-pull-requests/">Pull Requests</a>
+            <p>Pull requests are how we re-unify (or merge) our branches back together. So once you're done with your take home
+              practice excersizes, you can merge the branch into your gh-pages branch so your instructor can test the functionality
+              of the code in real time. Read up on gh-pages branches below if you don't know what they are or what they do.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-group mobile" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <h4 class="panel-title">
+              gh-pages Branches
+            </h4>
+          </a>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <a href="https://pages.github.com/">gh-pages</a> branches
+            <p>Have you ever built a website and wanted to show it off but didn't want to pay for web hosting? Lucky for you,
+              github.com offers
+              <em>free</em> web hosting! You can't pick the name of your website, but if you just want to show off your skills
+              or show a client your progress on their website without paying a hosting company, this is your best bet. As
+              far as how we're going to use the gh-pages branch, it will be for testing your take home code. Each night after
+              class, you will create a new branch for your take home excersize, create the program for that class, and test
+              it to make sure it works. Once you're satisfied with it, you will create a Pull Request on github.com with
+              your take home branch as the
+              <b>compare</b> and your gh-pages branch as the
+              <b>base</b>. That way, your instructor can test your work as well as look over the code itself.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-group mobile" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            <h4 class="panel-title">
+              Merge Conflicts
+            </h4>
+          </a>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">
+            <a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts">Merge conflicts</a>
+            <p>While we never
+              <em>want</em> merge conflicts to happen, they sometimes do. Because of this, you should read up on what they are
+              and how to resolve them. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile ends -->
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/GeekwiseAcademy/">
+        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/geekwise-academy/">
+        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/GeekwiseAcademy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/scripts.js"></script>
-    </body>
-  </html>
+</html>
