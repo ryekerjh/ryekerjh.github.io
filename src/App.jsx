@@ -114,7 +114,7 @@ function App() {
               LinkedIn
             </a>
             <a
-              href="https://linkedin.com/in/ryekerjherndon"
+              href="https://github.com/ryekerjh"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-300 hover:text-black transition duration-300"
