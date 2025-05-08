@@ -7,6 +7,12 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply transition-colors duration-300;
+}
+
+html {
+  @apply transition-colors duration-300;
+  background-color: #000;
 }
 
 .bg-plumbs-gradient {
