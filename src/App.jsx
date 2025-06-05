@@ -60,8 +60,8 @@ function App() {
       <header className="bg-blue-800 text-white p-4 sticky top-0 dark:bg-gray-900">
         <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
           <h1 className="text-xl font-bold mb-2 md:mb-0">
-            <span className="block md:hidden">RJH</span>
-            <span className="hidden md:block">Ryeker J Herndon</span>
+            {/* <span className="block md:hidden">RJH</span> */}
+            <img src={'/img/rjhwebdesignlogo-transparent.png'} alt="Ryeker J Herndon" className="mx-auto h-24 xs:h-32" />
           </h1>
           <div className="flex items-center space-x-4">
             <nav className="flex flex-col items-center md:flex-row">
